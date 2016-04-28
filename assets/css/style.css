@@ -1,0 +1,84 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #F18E8E;
+}
+
+#text-wrapper {
+	width: 270px;
+	height: 200px;
+	position: absolute;
+	font-family: 'Raleway';
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	top: calc(50% - 100px);
+	left: calc(50% - 135px);
+	font-size: 2em;
+	line-height: 1.5em;
+	color: white;
+	opacity: 0.7;
+}
+
+.hbd {
+	display: block;
+}
+
+#hbd1 {
+	animation: fadeIn 5s;
+	display: none;
+}
+
+#hbd2 {
+	animation: fadeIn 5s;
+	display: none;
+}
+
+#jul {
+	animation: fadeIn 5s;
+	display: none;
+}
+
+.hbd fadeIn {
+	0% {
+	opacity: 0;
+	} 100% {
+	opacity: 1;
+	}
+}
+
+@-moz-keyframes fadeIn {
+	0% {
+	opacity: 0;
+	}
+
+	100% {
+	opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+	opacity: 0;
+	}
+
+	100% {
+	opacity: 1;
+	}
+}
+
+@keyframes slideUp {
+	to {
+		transform: translateY(-70px);
+	}
+}
+
+.slideUpAnim {
+	animation: slideUp 7s;
+	animation-fill-mode:forwards;
+}
