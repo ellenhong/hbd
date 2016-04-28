@@ -74,11 +74,11 @@ body {
 
 @keyframes slideUp {
 	to {
-		transform: translateY(-70px);
+		transform: translateY(-60px);
 	}
 }
 
 .slideUpAnim {
-	animation: slideUp 7s;
+	animation: slideUp 6s;
 	animation-fill-mode:forwards;
 }
