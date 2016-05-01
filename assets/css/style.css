@@ -10,6 +10,67 @@ body {
 	background-color: #F18E8E;
 }
 
+.panel {
+	display: table;
+	position: relative;
+}
+
+#landing {
+	width: 100%;
+	height: 100%;
+	background-color: #F18E8E;
+}
+
+#balloons-left {
+	position: absolute;
+	top: 10%;
+	left: 10%;
+}
+
+#balloons-right {
+	position: absolute;
+	top: 10%;
+	right: 10%;
+}
+
+
+.svg-balloon {
+	width: 150px;
+	display: inline-block;
+}
+
+#svg-balloon2 {
+	position: absolute;
+	top: 35%;
+	left: 45%;
+}
+
+path {
+	stroke-dasharray: 800;
+	stroke-dashoffset: 800;
+	animation: dash 3s linear forwards;
+	animation-delay: 5s;
+}
+
+#p0 {
+
+}
+
+#p1 {
+
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+#page1 {
+	width: 100%;
+	height: 200%;
+}
+
 #text-wrapper {
 	width: 270px;
 	height: 200px;
@@ -22,54 +83,51 @@ body {
 	font-size: 2em;
 	line-height: 1.5em;
 	color: white;
-	opacity: 0.7;
+	opacity: 1;
 }
 
 .hbd {
 	display: block;
-}
-
-#hbd1 {
-	animation: fadeIn 5s;
-	display: none;
-}
-
-#hbd2 {
-	animation: fadeIn 5s;
-	display: none;
-}
-
-#jul {
 	animation: fadeIn 5s;
 	display: none;
 }
 
 .hbd fadeIn {
 	0% {
-	opacity: 0;
-	} 100% {
-	opacity: 1;
+		opacity: 0;
+	} 
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Fade in landing page text */ 
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
 	}
 }
 
 @-moz-keyframes fadeIn {
 	0% {
-	opacity: 0;
+		opacity: 0;
 	}
 
 	100% {
-	opacity: 1;
+		opacity: 1;
 	}
 }
 
-@keyframes fadeIn {
-	0% {
-	opacity: 0;
-	}
+/* Slide up landing page text */ 
 
-	100% {
-	opacity: 1;
-	}
+.slideUpAnim {
+	animation: slideUp 5s;
+	animation-fill-mode:forwards;
 }
 
 @keyframes slideUp {
@@ -78,7 +136,15 @@ body {
 	}
 }
 
-.slideUpAnim {
-	animation: slideUp 6s;
-	animation-fill-mode:forwards;
+@-moz-keyframes slideUp {
+	to {
+		-moz-transform: translateY(-60px);
+	}
 }
+
+@-webkit-keyframes slideUp {
+	to {
+		-webkit-transform: translateY(-60px);
+	}
+}
+
