@@ -11,4 +11,11 @@ $(document).ready(function() {
 	setTimeout(function () {
 	    $('#text-wrapper').addClass('slideUpAnim');}, 5000
 	);
+
+	$('a').click(function() {
+	    $('html, body').animate({
+	      scrollTop: $( $.attr(this, 'href')).offset().top
+	    }, 1000);
+	    return false;
+  });
 })
