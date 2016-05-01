@@ -45,6 +45,16 @@ body {
 	left: 45%;
 }
 
+<<<<<<< HEAD
+=======
+#gift {
+	width: 150px;
+	position: absolute;
+	top: 55%;
+	left: calc(50% - 85px);
+}
+
+>>>>>>> origin
 path {
 	stroke-dasharray: 800;
 	stroke-dashoffset: 800;
@@ -52,12 +62,20 @@ path {
 	animation-delay: 5s;
 }
 
+<<<<<<< HEAD
 #p0 {
 
 }
 
 #p1 {
 
+=======
+polygon {
+	stroke-dasharray: 600;
+	stroke-dashoffset: 600;
+	animation: dash 3s linear forwards;
+	animation-delay: 5s;
+>>>>>>> origin
 }
 
 @keyframes dash {
