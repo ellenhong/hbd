@@ -51,4 +51,20 @@ $(document).ready(function() {
 	$window.on('scroll resize', check_if_in_view);
 	$window.trigger('scroll');
 
+
+	var imgHeight = 400;
+	var numImgs = 24;
+	var cont = 0;
+
+	var animation = setInterval(function(){
+	    var position =  -1 * (cont*imgHeight);
+	    $('#kind').find('img').css('margin-top', position);
+	    
+	    cont++;
+	    if(cont == numImgs){
+	        cont = 0;
+	    }
+	},100);
+
+
 })

@@ -672,8 +672,26 @@ polygon {
 	animation-delay: 4s;
 }
 
+#kind-wrapper {
+	background: #E7F6FF;
+}
 
 
 #kind-text {
-	color: #D0B0EC;
+	color: #7CC2EF;
+	top: 20%;
+}
+
+#kind {
+    width:50%;
+    height: 400px;
+    display:block;
+    overflow:hidden;
+    position: absolute;
+    left: calc(50% - 250px);
+    top: 30%;
+}
+
+#kind-image {
+
 }
