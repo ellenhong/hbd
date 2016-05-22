@@ -680,18 +680,31 @@ polygon {
 #kind-text {
 	color: #7CC2EF;
 	top: 20%;
+	height: 100%;
 }
 
 #kind {
-    width:50%;
     height: 400px;
     display:block;
     overflow:hidden;
     position: absolute;
     left: calc(50% - 250px);
-    top: 30%;
+    top: 10%;
 }
 
 #kind-image {
 
+}
+
+#jul-text {
+	top: 30%;
+	color: #F197BF;
+}
+
+#bejul-img {
+	width: 1000px;
+	position: absolute;
+	left: calc(50% - 500px);
+	top: -125px;
+	z-index: -100;
 }
